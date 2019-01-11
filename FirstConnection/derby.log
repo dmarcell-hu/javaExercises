@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jan 09 21:17:33 CET 2019:
+ Derby The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631) változat betöltése: a816c00e-0168-3443-5269-000007327350 példány
+a(z) G:\java_gyak\FirstConnection\sampleDB adatbázis-könyvtáron: sun.misc.Launcher$AppClassLoader@610455d6 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_172-b11
+user.dir=G:\java_gyak\FirstConnection
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Az adatbázis-osztálybetöltő elindult - derby.database.classpath=''
