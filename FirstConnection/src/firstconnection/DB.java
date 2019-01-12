@@ -24,9 +24,6 @@ public class DB {
     
     public DB(){
         
-        
-        
-
             //megpróbáljuk életre kelteni
             try {
                 conn = DriverManager.getConnection(URL);
@@ -41,11 +38,12 @@ public class DB {
                 try {
                     createStatement = conn.createStatement();
                 } catch (SQLException ex) {
-                    System.out.println("valami baj van a createstatement létrehozásakor");
+                    System.out.println("valami baj van a createstatement (teherautó) létrehozásakor");
                     System.out.println("" + ex);
                 }
             }
-            //megnézzük, hogy üres e az adatbázis
+            
+        //megnézzük, hogy üres e az adatbázis
         DatabaseMetaData dbmd = null;
             try {
                 dbmd = conn.getMetaData();
