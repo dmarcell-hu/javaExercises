@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.CalculatorController">
+    <children>
+      <GridPane layoutX="50.0" layoutY="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnSqrt" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="75.0" text="√" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button fx:id="btnPct" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="75.0" text="\%" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button fx:id="btnPowTwo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="75.0" text="x²" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Button fx:id="btnDivX" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="75.0" text="1/x" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Button fx:id="btnCE" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="75.0" text="CE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button fx:id="btnC" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="75.0" text="C" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnBackspace" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="75.0" text="⌫" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="75.0" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btnSeven" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="75.0" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Button fx:id="btnEight" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="75.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnNine" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="75.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btnMult" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="55.0" prefWidth="75.0" text="×" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnFour" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="75.0" text="4" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Button fx:id="btnFive" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="75.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnSix" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="75.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btnSub" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="75.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnOne" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="75.0" text="1" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Button fx:id="btnTwo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="75.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnThree" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="75.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="47.0" prefWidth="75.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnSign" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="75.0" text="±" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Button fx:id="btnZero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="75.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="btnDecPoint" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="46.0" prefWidth="75.0" text="," GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="btnEq" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="75.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <StackPane AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <TextField fx:id="display" prefHeight="73.0" prefWidth="300.0" text="0" editable="false" alignment="BOTTOM_RIGHT">
+          <font>
+            <Font name="Lucida Console" size="20.0" />
+         </font>
+      </TextField>
+      </StackPane>
+    </children>
+</AnchorPane>
